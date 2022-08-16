@@ -1,0 +1,16 @@
+<!-- <br><br> -->
+<!-- <form #contactForm="ngForm"> -->
+<!-- <input type="text"  placeholder="Enter userId" [(ngModel)]="userID"><br><br> -->
+<!-- <input type="text"  placeholder="Enter id" [(ngModel)]="id"><br><br> -->
+<!-- <input type="text"  placeholder="Enter title" [(ngModel)]="title"><br><br> -->
+<!-- <input type="text"  placeholder="Enter body" [(ngModel)]="body"><br><br> -->
+<!-- <button (click)="updatedata()">update</button><br><br> -->
+<!-- </form> -->
+<br><br>
+<form [formGroup]="updatedata" (ngSubmit)="update()">
+    <input type="text" placeholder="UserId" formControlName="userId"> <br><br>
+    <input type="text" placeholder="Id" formControlName="id"><br><br>
+    <input type="text" placeholder="Title" formControlName="title"><br><br>
+    <input type="text" placeholder="Body" formControlName="body"><br><br>
+    <button type="submit">Update</button>
+</form>
